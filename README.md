@@ -19,33 +19,33 @@ To model the data, I identified the facts and dimensions. The fact table consist
 
 To start, I isntalled the following:
 
-azure-storage-blob - for data in storage
+    azure-storage-blob - for data in storage
 
-pyarrow - working with data and dataframes
+    pyarrow - working with data and dataframes
 
-psycopg2 sqlalchemy - interact with postgresql
+    psycopg2 sqlalchemy - interact with postgresql
   
-    and used these libraries for manipulating data, transforming, and loading: 
+and used these libraries for manipulating data, transforming, and loading: 
 
-import pandas as pd 
+    import pandas as pd 
 
-import numpy as np
+    import numpy as np
 
-import json
+    import json
 
-from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+    from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 
-from io import StringIO
+    from io import StringIO
 
-from datetime import datetime 
+    from datetime import datetime 
 
-from math import ceil
+    from math import ceil
 
-import datetime
+    import datetime
 
-import calendar
+    import calendar
 
-from sqlalchemy import create_engine
+    from sqlalchemy import create_engine
 
 
 After creating a dataframe from utilizing json and retrieving container client with azure, I started my transformation. For the transformation, I corrected the data of 'Premis Cd' to 'Int64' as it has no decimal values. I also combined "DATE OCC" and "TIME OCC" to create "DATETIME OCC" for simplicity. Further, I dropped the columns, 'DR_NO', 'Date Rptd', 'DATE OCC', 'TIME OCC', 'AREA', 'Rpt Dist No','Part 1-2','Mocodes', 'Weapon Used Cd', 'Weapon Desc','Crm Cd 1', 'Crm Cd 2', 'Crm Cd 3', 'Crm Cd 4', and 'Cross Street' as I will not be needing them for the data warehouse.
