@@ -61,7 +61,7 @@ Once all the data was loaded in, I was able to further analyze and visualize the
 
 [PowerBI Link](https://cuny907-my.sharepoint.com/:u:/g/personal/jeffery_liu02_login_cuny_edu/EUNAHHHGcXVAgov9Ob07UtcBeBkH69n87BlrPtuZTGkWPw?e=mbavx3)
 
-Bar Chart Comparing Average Victim by Area
+Bar Chart Comparing Average Victim Age by Area
 
 ![bar_chartof_avg_vict_by_area](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/d3c0133b-6d4f-4464-87dd-a14fe24368ae)
 
