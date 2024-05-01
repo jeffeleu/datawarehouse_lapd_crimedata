@@ -19,11 +19,11 @@ To model the data, I identified the facts and dimensions. The fact table consist
 
 To start, I isntalled the following:
 
-    azure-storage-blob - for data in storage
+    azure-storage-blob  #for data in storage
 
-    pyarrow - working with data and dataframes
+    pyarrow #working with data and dataframes
 
-    psycopg2 sqlalchemy - interact with postgresql
+    psycopg2 sqlalchemy #interact with postgresql
   
 and used these libraries for manipulating data, transforming, and loading: 
 
