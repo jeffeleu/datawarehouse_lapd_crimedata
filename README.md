@@ -17,6 +17,32 @@ To model the data, I identified the facts and dimensions. The fact table consist
 
 ## Extract, Transform, Load
 
+To start, I isntalled the following: 
+azure-storage-blob - for data in storage
+pyarrow - working with data and dataframes
+psycopg2 sqlalchemy - interact with postgresql
+
+and used these libraries for manipulating data, transforming, and loading: 
+import pandas as pd 
+import numpy as np
+import json
+from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
+from io import StringIO
+from datetime import datetime 
+from math import ceil
+import datetime
+import calendar
+from sqlalchemy import create_engine
+
+After creating a dataframe from utilizing json and retrieving container client with azure, I started my transformation. For the transformation, I corrected the data of 'Premis Cd' to 'Int64' as it has no decimal values. I also combined "DATE OCC" and "TIME OCC" to create "DATETIME OCC" for simplicity. Further, I dropped the columns, 'DR_NO', 'Date Rptd', 'DATE OCC', 'TIME OCC', 'AREA', 'Rpt Dist No','Part 1-2','Mocodes', 'Weapon Used Cd', 'Weapon Desc','Crm Cd 1', 'Crm Cd 2', 'Crm Cd 3', 'Crm Cd 4', and 'Cross Street' as I will not be needing them for the data warehouse.
+
+I then start the data mapping of the dimensions and fact table. Each table is given a data map relevant to it, its contents ordered, and turned into a dataframe. 
+
+When the fact and dimension dataframes are completed, I created an Azure Database for Postgresql servers.
+I took the database url and created a sqlalchemy engine to push the data into my data warehouse using DataGrip.
+Before loading the data, I used the sql scripts from my data model to structure the data warehouse in DataGrip.
+Once all the data was loaded in, I was able to further analyze and visualize the data leveraging Power BI.
+
 ## Data Visualization on Power BI
 
 [PowerBI Link](https://cuny907-my.sharepoint.com/:u:/g/personal/jeffery_liu02_login_cuny_edu/EUNAHHHGcXVAgov9Ob07UtcBeBkH69n87BlrPtuZTGkWPw?e=mbavx3)
