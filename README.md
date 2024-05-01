@@ -20,15 +20,19 @@ To model the data, I identified the facts and dimensions. The fact table consist
 ## Data Visualization on Power BI
 
 Bar Chart Comparing Average Victim by Area
+
 ![bar_chartof_avg_vict_by_area](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/d3c0133b-6d4f-4464-87dd-a14fe24368ae)
 
 Line Chart Showing the Number of Crimes by Year
+
 ![linechartofnumberofcrimesbyyear](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/568517aa-35fc-45f4-b5bb-3dba4596b0be)
 
 Map Locating Crimes with Latitude and Longitude
+
 ![latlon](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/4b698ed9-49f1-4a1f-8a19-003a0bdad79e)
 
 Pie Chart Showing Crimes by Description
+
 ![piechartofcrimesbydescr](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/c2dbef8e-8253-4ab4-8032-99b41994f20b)
 
 ## Sources
