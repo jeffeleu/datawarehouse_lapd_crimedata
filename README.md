@@ -26,8 +26,7 @@ pyarrow - working with data and dataframes
 psycopg2 sqlalchemy - interact with postgresql
 
 
-
-and used these libraries for manipulating data, transforming, and loading: 
+### and used these libraries for manipulating data, transforming, and loading: 
 
 import pandas as pd 
 
