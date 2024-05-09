@@ -17,7 +17,7 @@ To model the data, I identified the facts and dimensions. The fact table consist
 
 ## Extract, Transform, Load
 
-To start, I isntalled the following:
+To start, I installed the following:
 
     azure-storage-blob  #for data in storage
 
