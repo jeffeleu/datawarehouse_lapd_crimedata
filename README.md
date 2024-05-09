@@ -73,7 +73,7 @@ Map Locating Crimes with Latitude and Longitude
 
 ![latlon](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/4b698ed9-49f1-4a1f-8a19-003a0bdad79e)
 
-Pie Chart Showing Crimes by Description
+Pie Chart Showing Crimes by Description from 2020 to Present
 
 ![piechartofcrimesbydescr](https://github.com/jeffeleu/DataWarehouse_LAPD_Crime__Data/assets/160162018/c2dbef8e-8253-4ab4-8032-99b41994f20b)
 
